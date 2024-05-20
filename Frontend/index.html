@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strapi</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="Home">
+      <div>
+        <h1>Welcome To Book Ducks</h1>
+        <button id="multiBtn" onclick="showLoginPage()" style="width: 100px">
+          Loggin
+        </button>
+      </div>
+      <div id="bookList"></div>
+    </div>
+    <div id="HomeInlogg">
+      <button id="logout">Logout</button>
+      <button id="Profile">Profile</button>
+      <div>
+        <h1>Welcome To Book Ducks <span id="user"></span></h1>
+      </div>
+      <div id="bookLista"></div>
+      <div class="z">
+        <div id="ratingForm">
+          <label for="bookSelect">Välj en bok:</label>
+          <select id="bookSelect" name="bookId"></select>
+          <label for="ratingInput">Betyg (1-5):</label>
+          <input
+            placeholder="-"
+            type="number"
+            id="ratingInput"
+            name="rating"
+            min="1"
+            max="5"
+            required
+          />
+
+          <button id="submitBtn">Betygsätt</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="inloggPage">
+      <div>
+        <button id="x" onclick="RenderLogoutState()">X</button>
+        <input id="UserName" type="text" placeholder="Username or Email" />
+        <input id="PassWord" type="password" placeholder="Password" />
+
+        <button id="LoginBtn">Login</button>
+        <button id="CreateBtn">Skapa konto</button>
+      </div>
+    </div>
+    <div id="RegisterPage">
+      <div>
+        <input id="RegUserName" type="text" placeholder="Username" />
+        <input id="RegEmail" type="text" placeholder="Email" />
+        <input id="RegPassWord" type="password" placeholder="Password" />
+        <input
+          id="ConfirmPassWord"
+          type="password"
+          placeholder=" Confirm Password"
+        />
+
+        <button id="RegisterBtn">Register</button>
+        <button id="RenderBtn">Avbryt</button>
+      </div>
+    </div>
+    <div id="ProfilePage">
+      <button id="ProfileBackBtn">Back</button>
+      <h2>Profile Settings</h2>
+      <h3>Sparade Böcker</h3>
+      <button id="SortTitel">Sort Titel</button>
+      <button id="SortAuthor">Sort Author</button>
+      <div id="bokListan"></div>
+      <h4>Betygsatta Böcker</h4>
+      <button id="SortRating">Sortera Rating</button>
+      <div id="bookListan"></div>
+    </div>
+  </body>
+</html>

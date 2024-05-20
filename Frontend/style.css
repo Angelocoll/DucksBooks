@@ -1,0 +1,194 @@
+#RegisterPage {
+  display: none;
+}
+#inloggPage {
+  display: none;
+}
+#Home {
+  text-align: center;
+  width: 100%;
+}
+#HomeInlogg {
+  display: none;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(rgb(0, 0, 0), rgb(52, 133, 255), black);
+}
+
+#inloggPage div {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#RegisterPage div {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin: 1rem;
+  padding: 0.3rem;
+}
+button {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  border: 1px white solid;
+  width: 70%;
+}
+button:hover {
+  cursor: pointer;
+  scale: 0.95;
+  background: rgb(37, 37, 37);
+}
+img {
+  height: 200px;
+  width: 200px;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+p {
+  color: rgb(0, 0, 0);
+  margin: 0.8rem;
+}
+.book-container {
+  border: solid 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 25%;
+  background: white;
+  position: relative;
+}
+h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 4rem;
+}
+#bookList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 4rem;
+}
+#bookLista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 4rem;
+}
+#bokListan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 4rem;
+}
+#bookListan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 4rem;
+}
+#x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+#ratingForm {
+  width: 20%;
+}
+.z {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+label {
+  color: rgb(0, 0, 0);
+}
+#logout {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: auto;
+}
+#Profile {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: auto;
+}
+#ratingForm {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+#ProfilePage {
+  display: none;
+  text-align: center;
+  width: 90%;
+}
+h2 {
+  color: white;
+  font-size: 4rem;
+}
+h3 {
+  text-decoration: underline;
+  color: white;
+  font-size: 3rem;
+}
+h4 {
+  color: white;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+#SortTitel,
+#SortAuthor,
+#SortRating {
+  width: auto;
+}
+#ProfileBackBtn {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#bokListan button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
